@@ -1,0 +1,35 @@
+[33mcommit d7862827ae75ec5438d6955cccfa79eed4af751e[m[33m ([m[1;36mHEAD -> [m[1;32mjinyoung[m[33m)[m
+Merge: fdf7092 37f2722
+Author: Jin Bae <jinbae00@gmail.com>
+Date:   Tue Nov 15 11:35:24 2022 +0900
+
+    Merge branch 'sujeong' of https://github.com/jbae9/miniproject into jinyoung
+
+[33mcommit 37f2722eeff387c81023d94df1c309338594b350[m
+Author: Sujeong Kim <miysj3315@gmail.com>
+Date:   Tue Nov 15 11:25:49 2022 +0900
+
+    test
+
+[33mcommit fdf7092270b917a446eaa54753b02d412baa47ed[m[33m ([m[1;31morigin/jinyoung[m[33m)[m
+Author: Jin Bae <jinbae00@gmail.com>
+Date:   Tue Nov 15 11:24:09 2022 +0900
+
+    Branch test
+
+[33mcommit d32939a6c95b7af607a8bc8e73db84a2b276e553[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Jin Bae <jinbae00@gmail.com>
+Date:   Tue Nov 15 10:40:03 2022 +0900
+
+    Update index.html
+    
+    제목 div 추가
+
+[33mcommit 53e994ce6d748274cdc8745acfa8cf6ed6860719[m
+Author: Jin Bae <jinbae00@gmail.com>
+Date:   Mon Nov 14 20:04:46 2022 +0900
+
+            new file:   app.py
+            new file:   templates/index.css
+            new file:   templates/index.html
+            new file:   templates/index.js
