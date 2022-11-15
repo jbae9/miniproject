@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
+/*제목 CSS*/
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 /*카드 CSS*/
 html, body {
   background: ;
