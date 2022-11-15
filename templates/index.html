@@ -20,7 +20,17 @@
 <div class="title">
     <h1>셀럽파이브</h1>
     <div class="guestButton">
-        <button class="button-1" role="button" onclick=guestButton()>방명록 보기/작성하기</button>
+        <button class="button-1" id=showButton role="button" onclick="guestButton()">방명록 보기/작성하기</button>
+    </div>
+    <div id="guestLog">
+        <form>
+            <label>이름</label><br>
+            <input type="text" id="nameField"><br><br>
+
+            <label>응원 메시지를 입력해주세요!</label><br>
+            <textarea id="commentField"></textarea>
+        </form>
+        <button onclick="">등록하기</button>
     </div>
     <h3>목표, 약속</h3>
 

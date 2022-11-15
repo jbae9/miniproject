@@ -1,5 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 
+/*방명록 CSS*/
+#guestLog{
+  display:none;
+}
+
+input[type=text] {
+  border:none;
+  border-bottom: 1px solid #cecece;
+  background-color: #f6f6f6;
+}
+
+#nameField {
+  height:20px;
+  width:250px;
+}
+
+#commentField {
+  border:none;
+  border-bottom: 1px solid #cecece;
+  background-color: #f6f6f6;
+
+  resize:none;
+  width:250px;
+  height:100px;
+}
+
 /*카드 CSS*/
 html, body {
   background: ;
@@ -241,7 +267,8 @@ html, body {
 
 /*방명록 버튼*/
 .guestButton .button-1 {
-    background-color: #2b85d3;
+  background-color: #2b85d3;
+  width:170px;
 }
 
 .guestButton .button-1:hover,
