@@ -1,13 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Serif+KR:wght@300&display=swap");
 
 /*제목 CSS*/
 .title {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
+    width: 850px;
+    height: 250px;
 
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),url("https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F311%2F2018%2F11%2F06%2F0000918380_001_20181106194401412.jpg&type=sc960_832");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding-top: 50px;
+
+    color: white;
+    font-family: 'Noto Serif KR', serif;
 }
+
 
 /*방명록 CSS*/
 #guestLog {
@@ -48,9 +61,11 @@ html, body {
   justify-content: center;
   align-items: center;
 
+
   position: absolute;
 
   border: 2px solid green;
+
 }
 
 /*전체 카드 크기*/
