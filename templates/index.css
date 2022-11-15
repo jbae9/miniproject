@@ -202,7 +202,7 @@ html, body {
 
 
 /*블로그 버튼*/
-.memCard .button-1 {
+.button-1 {
   background-color: #66001a;
   border-radius: 8px;
   border-style: none;
@@ -237,4 +237,14 @@ html, body {
 .button-1:hover,
 .button-1:focus {
   background-color: #a10026;
+}
+
+/*방명록 버튼*/
+.guestButton .button-1 {
+    background-color: #2b85d3;
+}
+
+.guestButton .button-1:hover,
+.button-1:focus {
+  background-color: #2068a6;
 }
