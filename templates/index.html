@@ -16,22 +16,10 @@
 
 </head>
 <body>
-<!--제목, 방명록 버튼, 목표, 약속 div 만들기-->
+<!--제목, 목표, 약속 div 만들기-->
 <div class="title">
     <h1>셀럽파이브</h1>
-    <div class="guestButton">
-        <button class="button-1" id=showButton role="button" onclick="guestButton()">방명록 보기/작성하기</button>
-    </div>
-    <div id="guestLog">
-        <form>
-            <label>이름</label><br>
-            <input type="text" id="nameField"><br><br>
 
-            <label>응원 메시지를 입력해주세요!</label><br>
-            <textarea id="commentField"></textarea>
-        </form>
-        <button onclick="">등록하기</button>
-    </div>
     <h3>목표, 약속</h3>
 
     <p> 4. 우리 팀만의 특징과 추구하는 궁극적인 목표
@@ -42,8 +30,8 @@
 </div>
 
 <!--멤버 설명 카드 만들기-->
-<!--배진영 카드-->
 <div class="center">
+<!--배진영 카드-->
     <div class="memCard">
         <div class="additional">
             <div class="user-memCard center">
@@ -437,6 +425,22 @@
         </div>
     </div>
 </div>
+
+<!--방명록 버튼-->
+<div class="guestButton">
+    <button class="button-1" id=showButton role="button" onclick="guestButton()">방명록 보기/작성하기</button>
+</div>
+<div id="guestLog">
+    <form>
+        <label>이름</label><br>
+        <input type="text" id="nameField"><br><br>
+
+        <label>응원 메시지를 입력해주세요!</label><br>
+        <textarea id="commentField"></textarea>
+    </form>
+    <button onclick="">등록하기</button>
+</div>
+
 
 </body>
 </html>
