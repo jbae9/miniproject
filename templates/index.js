@@ -10,7 +10,6 @@ function guestButton(){
     }
 }
 
-
 // Ajax와 연결해서 방명록 DB GET/POST 함수 만들기
 // app.py (Flask)에서 전체 방명록 가져오기
 function show_log() {
@@ -27,16 +26,10 @@ function show_log() {
                 let comment = rows[i]['comment']
 
                 // 받은 정보를 HTML로 전환
-                let temp_html = `<div class="postcard">
-                                    <div class="card-body">
-                                        <blockquote class="blockquote mb-0">
-                                            <p>${comment}</p>
-                                            <footer class="blockquote-footer">${name}</footer>
-                                        </blockquote>
-                                    </div>
-                                </div>`
+                let temp_html = `
+                    `
 
-                $('#mycard').append(temp_html)
+                $('#방명록ID').append(temp_html)
             }
         }
     });
@@ -45,12 +38,12 @@ function show_log() {
 // 방명록 정보를 dic형태로 app.py에게 보내기
 // app.py에서 정보가 성공적으로 MongoDB로 올려졌으면 'msg'를 받는다
 function save_log() {
-    let name = $('#nameField').val()
-    let comment = $('#commentField').val()
+    let name = $('#name').val()
+    let comment = $('#comment').val()
 
     $.ajax({
         type: 'POST',
-        url: '/URL이름',
+        url: '/user',
         // Data sent by user on page
         data: {name_give: name, comment_give: comment},
         success: function (response) {
@@ -60,5 +53,4 @@ function save_log() {
             // Reloads window when complete
             window.location.reload()
         }
-    });
-}
+    });}
