@@ -26,8 +26,11 @@
 <div class="title">
     <h1>셀럽파이브</h1>
     <h6>내일배움캠프 4기 Node.js 5조 </h6>
-    <h4>배움, 용기, 시도 </h4>
+    <h4>배움, 용기, 시도 </h4><br>
+    <button type="button" class="btn btn-outline-light" onclick="document.getElementById('guestButton').scrollIntoView()">방명록 바로가기</button>
 </div>
+
+<br><br>
 
 <!--멤버 카드-->
 <div class="container">
@@ -174,9 +177,8 @@
 <!--방명록-->
 <div class="center">
     <!--방명록 버튼-->
-    <div class="guestButton">
-        <button id="showButton" type="button" class="btn btn-primary btn-lg" onclick="guestButton()">방명록 보기/작성하기
-        </button>
+    <div id="guestButton">
+        <button id="showButton" type="button" class="btn btn-primary btn-lg" onclick="guestButton()">방명록 보기/작성하기</button>
     </div>
     <br>
     <div id="guestLog">

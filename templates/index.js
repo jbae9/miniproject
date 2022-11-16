@@ -10,6 +10,7 @@ function guestButton(){
     }
 }
 
+
 // Ajax와 연결해서 방명록 DB GET/POST 함수 만들기
 // app.py (Flask)에서 전체 방명록 가져오기
 function show_log() {
