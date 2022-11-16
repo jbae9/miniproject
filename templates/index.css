@@ -78,11 +78,11 @@
     display:none;
 }
 
-/*방명록 폼*/
-#guestLog{
-  display:none;
+#guestLog > h2 {
+    font-family: YES24;
 }
 
+/*방명록 폼*/
 input[type=text] {
   border:none;
   border-bottom: 1px solid #cecece;
@@ -91,7 +91,7 @@ input[type=text] {
 
 #nameField {
   height:20px;
-  width:250px;
+  width:500px;
 }
 
 #commentField {
@@ -100,7 +100,7 @@ input[type=text] {
   background-color: #f6f6f6;
 
   resize:none;
-  width:250px;
+  width:500px;
   height:100px;
 }
 
