@@ -16,11 +16,11 @@ function guestButton(){
 function show_log() {
     $.ajax({
         type: 'GET',
-        url: '/URL이름',
+        url: '/guests',
         data: {},
         success: function (response) {
             // Create variable 'rows' from dic var 'response'
-            let rows = response['logs']
+            let rows = response['guests']
 
             for (let i = 0; i < rows.length; i++) {
                 let name = rows[i]['name']
@@ -50,7 +50,7 @@ function save_log() {
 
     $.ajax({
         type: 'POST',
-        url: '/URL이름',
+        url: '/guests',
         // Data sent by user on page
         data: {name_give: name, comment_give: comment},
         success: function (response) {
