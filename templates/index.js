@@ -27,9 +27,16 @@ function show_log() {
                 let comment = rows[i]['comment']
 
                 // 받은 정보를 HTML로 전환
-                let temp_html = ``
+                let temp_html = `<div class="postcard">
+                                    <div class="card-body">
+                                        <blockquote class="blockquote mb-0">
+                                            <p>${comment}</p>
+                                            <footer class="blockquote-footer">${name}</footer>
+                                        </blockquote>
+                                    </div>
+                                </div>`
 
-                $('#방명록ID').append(temp_html)
+                $('#mycard').append(temp_html)
             }
         }
     });
@@ -38,8 +45,8 @@ function show_log() {
 // 방명록 정보를 dic형태로 app.py에게 보내기
 // app.py에서 정보가 성공적으로 MongoDB로 올려졌으면 'msg'를 받는다
 function save_log() {
-    let name = $('#name').val()
-    let comment = $('#comment').val()
+    let name = $('#nameField').val()
+    let comment = $('#commentField').val()
 
     $.ajax({
         type: 'POST',
@@ -53,4 +60,5 @@ function save_log() {
             // Reloads window when complete
             window.location.reload()
         }
-    });}
+    });
+}
