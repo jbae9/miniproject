@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Serif+KR:wght@300&display=swap");
 
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /*제목 CSS*/
 .title {
     display: flex;
@@ -51,4 +58,36 @@
 /*방명록 폼 숨기기*/
 #guestLog {
     display:none;
+}
+
+/*방명록 폼*/
+#guestLog{
+  display:none;
+}
+
+input[type=text] {
+  border:none;
+  border-bottom: 1px solid #cecece;
+  background-color: #f6f6f6;
+}
+
+#nameField {
+  height:20px;
+  width:250px;
+}
+
+#commentField {
+  border:none;
+  border-bottom: 1px solid #cecece;
+  background-color: #f6f6f6;
+
+  resize:none;
+  width:250px;
+  height:100px;
+}
+
+/*방명록 버튼*/
+#showButton {
+  background-color: #2b85d3;
+  width:240px;
 }
