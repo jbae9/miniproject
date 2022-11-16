@@ -8,8 +8,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
@@ -25,153 +25,149 @@
 <!--제목, 목표, 약속 div 만들기-->
 <div class="title">
     <h1>셀럽파이브</h1>
-
-    <label>응원 메시지를 입력해주세요!</label><br>
-    <textarea id="commentField"></textarea>
-    </form>
-    <button onclick="">등록하기</button>
-</div>
-<div class="mini">
-    <h3>배움, 용기, 시도 </h3>
-</div>
-
+    <h6>내일배움캠프 4기 Node.js 5조 </h6>
+    <h4>배움, 용기, 시도 </h4>
 </div>
 
 <!--멤버 카드-->
 <div class="container">
-<div class="row row-cols-2 g-3">
-    <!--배진영 카드-->
-    <div class="col">
-        <div class="card mb-3" style="max-width: 800px;height: 280px">
-            <div class="row g-0">
-                <div class="col-lg-4 memberImg" style="width:200px">
-                    <img src="../static/배진영.png" class="img-fluid rounded-start" alt="...">
+    <div class="row row-cols-2 g-3">
+        <!--배진영 카드-->
+        <div class="col">
+            <div class="card mb-3" style="max-width: 800px;height: 280px">
+                <div class="row g-0">
+                    <div class="col-lg-4 memberImg" style="width:200px">
+                        <img src="../static/배진영.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="card-body">
+                            <h5 class="card-title">배진영</h5>
+                            <p style="font-size:16px;color:grey;margin:0">팀장</p>
+                            <p class="card-text">
+                                <b>MBTI</b>: INTJ <br>
+                                <b>장점</b>: <br>
+                                <b>스타일</b>: 팀 멤버별 진도를 파악하고 빨리 진도를 따라잡을 수 있게 도우려고 합니다.<br>
+                            </p>
+                            <p class="buttonPos">
+                                <button type="button" class="btn btn-light blogButton"
+                                        onclick="location.href='https://velog.io/@jinbae'">블로그 바로가기
+                                </button>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="card-body">
-                        <h5 class="card-title">배진영</h5>
-                        <p style="font-size:16px;color:grey;margin:0">팀장</p>
-                        <p class="card-text">
-                            <b>MBTI</b>: INTJ <br>
-                            <b>장점</b>: <br>
-                            <b>스타일</b>: 팀 멤버별 진도를 파악하고 빨리 진도를 따라잡을 수 있게 도우려고 합니다.<br>
-                        </p>
-                        <p class="buttonPos">
-                            <button type="button" class="btn btn-light blogButton"
-                                    onclick="location.href='https://velog.io/@jinbae'">블로그 바로가기
-                            </button>
-                        </p>
+            </div>
+        </div>
+
+
+        <!--김수정 카드-->
+        <div class="col">
+            <div class="card mb-3" style="max-width: 800px;height: 280px">
+                <div class="row g-0">
+                    <div class="col-md-4 memberImg" style="width:200px">
+                        <img src="../static/김수정.jpeg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">김수정</h5>
+                            <p style="font-size:16px;color:grey;margin:0">팀 멤버</p>
+                            <p class="card-text">
+                                <b>MBTI</b>: ENFJ<br>
+                                <b>장점</b>: 풍부한 아이디어, 깊은 공감 능력, 실패에 대한 Fearless<br>
+                                <b>스타일</b>: 문화적 다양성을 존중하고 일을 하는 데 선택과 집중을 좋아합니다.
+                            </p>
+                            <p class="buttonPos">
+                                <button type="button" class="btn btn-light blogButton"
+                                        onclick="location.href='https://susuavocado.tistory.com/'">블로그 바로가기
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--문성원 카드-->
+        <div class="col">
+            <div class="card mb-3" style="max-width: 800px;height: 280px">
+                <div class="row g-0">
+                    <div class="col-md-4 memberImg" style="width:200px">
+                        <img src="../static/문성원.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">문성원</h5>
+                            <p style="font-size:16px;color:grey;margin:0">팀 멤버</p>
+                            <p class="card-text">
+                                <b>MBTI</b>: <br>
+                                <b>장점</b>: <br>
+                                <b>스타일</b>:
+                            </p>
+                            <p class="buttonPos">
+                                <button type="button" class="btn btn-light blogButton" onclick="location.href=''">블로그
+                                    바로가기
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--이호균 카드-->
+        <div class="col">
+            <div class="card mb-3" style="max-width: 800px;height: 280px">
+                <div class="row g-0">
+                    <div class="col-md-4 memberImg" style="width:200px">
+                        <img src="../static/이호균.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">이호균</h5>
+                            <p style="font-size:16px;color:grey;margin:0">팀 멤버</p>
+                            <p class="card-text">
+                                <b>MBTI</b>: ISFJ<br>
+                                <b>장점</b>: 긍정적으로 잘 수용하는 성격<br>
+                                <b>스타일</b>: 적극적으로 활동하려고 노력하며 맡은 일에 책임감을 가집니다.
+                            </p>
+                            <p class="buttonPos">
+                                <button type="button" class="btn btn-light blogButton"
+                                        onclick="location.href='https://best-trip.tistory.com/'">블로그 바로가기
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--김규태 카드-->
+        <div class="col">
+            <div class="card mb-3" style="max-width: 800px;height: 280px">
+                <div class="row g-0">
+                    <div class="col-md-4 memberImg" style="width:200px">
+                        <img src="" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">김규태</h5>
+                            <p style="font-size:16px;color:grey;margin:0">팀 멤버</p>
+                            <p class="card-text">
+                                <b>MBTI</b>: <br>
+                                <b>장점</b>: <br>
+                                <b>스타일</b>:
+                            </p>
+                            <p class="buttonPos">
+                                <button type="button" class="btn btn-light blogButton" onclick="location.href=''">블로그
+                                    바로가기
+                                </button>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <!--김수정 카드-->
-    <div class="col">
-        <div class="card mb-3" style="max-width: 800px;height: 280px">
-            <div class="row g-0">
-                <div class="col-md-4 memberImg" style="width:200px">
-                    <img src="../static/김수정.jpeg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">김수정</h5>
-                        <p style="font-size:16px;color:grey;margin:0">팀 멤버</p>
-                        <p class="card-text">
-                            <b>MBTI</b>: ENFJ<br>
-                            <b>장점</b>: 풍부한 아이디어, 깊은 공감 능력, 실패에 대한 Fearless<br>
-                            <b>스타일</b>: 문화적 다양성을 존중하고 일을 하는 데 선택과 집중을 좋아합니다.
-                        </p>
-                        <p class="buttonPos">
-                            <button type="button" class="btn btn-light blogButton"
-                                    onclick="location.href='https://susuavocado.tistory.com/'">블로그 바로가기
-                            </button>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--문성원 카드-->
-    <div class="col">
-        <div class="card mb-3" style="max-width: 800px;height: 280px">
-            <div class="row g-0">
-                <div class="col-md-4 memberImg" style="width:200px">
-                    <img src="../static/문성원.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">문성원</h5>
-                        <p style="font-size:16px;color:grey;margin:0">팀 멤버</p>
-                        <p class="card-text">
-                            <b>MBTI</b>: <br>
-                            <b>장점</b>: <br>
-                            <b>스타일</b>:
-                        </p>
-                        <p class="buttonPos">
-                            <button type="button" class="btn btn-light blogButton" onclick="location.href=''">블로그 바로가기</button>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--이호균 카드-->
-    <div class="col">
-        <div class="card mb-3" style="max-width: 800px;height: 280px">
-            <div class="row g-0">
-                <div class="col-md-4 memberImg" style="width:200px">
-                    <img src="../static/이호균.jpg" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">이호균</h5>
-                        <p style="font-size:16px;color:grey;margin:0">팀 멤버</p>
-                        <p class="card-text">
-                            <b>MBTI</b>: ISFJ<br>
-                            <b>장점</b>: 긍정적으로 잘 수용하는 성격<br>
-                            <b>스타일</b>: 적극적으로 활동하려고 노력하며 맡은 일에 책임감을 가집니다.
-                        </p>
-                        <p class="buttonPos">
-                            <button type="button" class="btn btn-light blogButton"
-                                    onclick="location.href='https://best-trip.tistory.com/'">블로그 바로가기
-                            </button>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--김규태 카드-->
-    <div class="col">
-        <div class="card mb-3" style="max-width: 800px;height: 280px">
-            <div class="row g-0">
-                <div class="col-md-4 memberImg" style="width:200px">
-                    <img src="" class="img-fluid rounded-start" alt="...">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">김규태</h5>
-                        <p style="font-size:16px;color:grey;margin:0">팀 멤버</p>
-                        <p class="card-text">
-                            <b>MBTI</b>: <br>
-                            <b>장점</b>: <br>
-                            <b>스타일</b>:
-                        </p>
-                        <p class="buttonPos">
-                            <button type="button" class="btn btn-light blogButton" onclick="location.href=''">블로그 바로가기</button>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 </div>
 
@@ -179,8 +175,10 @@
 <div class="center">
     <!--방명록 버튼-->
     <div class="guestButton">
-        <button id="showButton" type="button" class="btn btn-primary btn-lg" onclick="guestButton()">방명록 보기/작성하기</button>
-    </div><br>
+        <button id="showButton" type="button" class="btn btn-primary btn-lg" onclick="guestButton()">방명록 보기/작성하기
+        </button>
+    </div>
+    <br>
     <div id="guestLog">
         <form>
             <label>이름</label><br>
