@@ -10,4 +10,5 @@ function guestButton(){
     }
 }
 
+
 // Ajax와 연결해서 방명록 DB GET/POST 함수 만들기
