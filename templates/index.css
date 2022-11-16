@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Serif+KR:wght@300&display=swap");
 
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
 .center {
     display: flex;
     flex-direction: column;
@@ -25,12 +29,21 @@
     padding-top: 20px;
 
     color: white;
-    font-family: 'Noto Serif KR', serif;
+    font-family: 'Noto Sans';
+}
+
+@font-face {
+    font-family: 'YES24';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/YES24.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .title > h1 {
-    font-size:50px;
-    letter-spacing:5px;
+    font-size:60px;
+    letter-spacing:6px;
+    font-weight: 400;
+    font-family: 'YES24';
 }
 
 /*멤버 카드*/
