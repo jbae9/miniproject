@@ -91,3 +91,10 @@ input[type=text] {
   background-color: #2b85d3;
   width:240px;
 }
+
+/* 방명록 댓글*/
+.postcard {
+    width: 500px;
+    margin: 20px auto 20px auto;
+    box-shadow: 0px 0px 5px gray;
+}
