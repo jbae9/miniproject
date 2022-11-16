@@ -22,11 +22,17 @@
 }
 
 /*멤버 카드*/
+/*멤버 이름*/
+.card-title {
+    font-weight:bold;
+    font-size:25px;
+}
+
 /*멤버 이미지*/
 .memberImg {
     display:inline-block;
     width:200px;
-    height:250px;
+    height:280px;
     overflow:hidden;
 
     display: flex;
@@ -35,7 +41,14 @@
     align-items: center;
 }
 
-.blogButton {
+/*블로그 버튼*/
+.buttonPos {
     position:absolute;
     bottom:5px;
+}
+
+
+/*방명록 폼 숨기기*/
+#guestLog {
+    display:none;
 }
