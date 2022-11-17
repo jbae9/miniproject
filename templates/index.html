@@ -11,8 +11,8 @@
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="../static/index.css">
+    <script src="../static/index.js"></script>
 
     <title>셀럽파이브 팀 페이지</title>
 
@@ -26,8 +26,11 @@
 <div class="title">
     <h1>셀럽파이브</h1>
     <h6>내일배움캠프 4기 Node.js 5조 </h6>
-    <h4>배움, 용기, 시도 </h4>
+    <h4>배움, 용기, 시도 </h4><br>
+    <button type="button" class="btn btn-outline-light" onclick="document.getElementById('guestButton').scrollIntoView()">방명록 바로가기</button>
 </div>
+
+<br><br>
 
 <!--멤버 카드-->
 <div class="container">
@@ -45,7 +48,7 @@
                             <p style="font-size:16px;color:grey;margin:0">팀장</p>
                             <p class="card-text">
                                 <b>MBTI</b>: INTJ <br>
-                                <b>장점</b>: <br>
+                                <b>장점</b>: 문제를 즐기고, 오류가 나도 배우자는 마인드<br>
                                 <b>스타일</b>: 팀 멤버별 진도를 파악하고 빨리 진도를 따라잡을 수 있게 도우려고 합니다.<br>
                             </p>
                             <p class="buttonPos">
@@ -99,9 +102,9 @@
                             <h5 class="card-title">문성원</h5>
                             <p style="font-size:16px;color:grey;margin:0">팀 멤버</p>
                             <p class="card-text">
-                                <b>MBTI</b>:ISFP<br>
-                                <b>장점</b>:어떤 오류를 만나도 포기하지않는것 <br>
-                                <b>스타일</b>:화합하는 분위기에서 자신의 능력을 최대한 끌어올립니다.
+                                <b>MBTI</b>: ISFP<br>
+                                <b>장점</b>: 어떤 오류를 만나도 포기하지않는것<br>
+                                <b>스타일</b>: 화합하는 분위기에서 자신의 능력을 최대한 끌어올립니다.
                             </p>
                             <p class="buttonPos">
                                 <button type="button" class="btn btn-light blogButton" onclick="location.href='https://swwcoding123.tistory.com/'">블로그
@@ -146,19 +149,19 @@
             <div class="card mb-3" style="max-width: 800px;height: 280px">
                 <div class="row g-0">
                     <div class="col-md-4 memberImg" style="width:200px">
-                        <img src="" class="img-fluid rounded-start" alt="...">
+                        <img src="../static/김규태.jpg" class="img-fluid rounded-start" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">김규태</h5>
                             <p style="font-size:16px;color:grey;margin:0">팀 멤버</p>
                             <p class="card-text">
-                                <b>MBTI</b>: <br>
-                                <b>장점</b>: <br>
-                                <b>스타일</b>:
+                                <b>MBTI</b>: ESFJ<br>
+                                <b>장점</b>: 시작하면 포기하지 않는다<br>
+                                <b>스타일</b>: 긍정적인 자세로, 주변 사람들과 어울리는 것을 좋아함!
                             </p>
                             <p class="buttonPos">
-                                <button type="button" class="btn btn-light blogButton" onclick="location.href=''">블로그
+                                <button type="button" class="btn btn-light blogButton" onclick="location.href='https://goodtae.tistory.com/'">블로그
                                     바로가기
                                 </button>
                             </p>
@@ -174,12 +177,12 @@
 <!--방명록-->
 <div class="center">
     <!--방명록 버튼-->
-    <div class="guestButton">
-        <button id="showButton" type="button" class="btn btn-primary btn-lg" onclick="guestButton()">방명록 보기/작성하기
-        </button>
+    <div id="guestButton">
+        <button id="showButton" type="button" class="btn btn-primary btn-lg" onclick="guestButton()">방명록 보기/작성하기</button>
     </div>
     <br>
     <div id="guestLog">
+        <h2>방명록을 적어주세요😊</h2>
         <form>
             <label>이름</label><br>
             <input type="text" id="nameField"><br><br>
@@ -188,9 +191,14 @@
             <textarea id="commentField"></textarea>
         </form>
         <button type="button" class="btn btn-secondary" onclick="save_log()">등록하기</button>
+        <br><br>
+
+        <!--방명록 댓글-->
+        <div id="mycard"></div>
     </div>
+
+
 </div>
 
 
 </body>
-</html>
