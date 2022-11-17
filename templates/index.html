@@ -26,8 +26,11 @@
 <div class="title">
     <h1>셀럽파이브</h1>
     <h6>내일배움캠프 4기 Node.js 5조 </h6>
-    <h4>배움, 용기, 시도 </h4>
+    <h4>배움, 용기, 시도 </h4><br>
+    <button type="button" class="btn btn-outline-light" onclick="document.getElementById('guestButton').scrollIntoView()">방명록 바로가기</button>
 </div>
+
+<br><br>
 
 <!--멤버 카드-->
 <div class="container">
@@ -45,7 +48,7 @@
                             <p style="font-size:16px;color:grey;margin:0">팀장</p>
                             <p class="card-text">
                                 <b>MBTI</b>: INTJ <br>
-                                <b>장점</b>: <br>
+                                <b>장점</b>: 문제를 즐기고, 오류가 나도 배우자는 마인드<br>
                                 <b>스타일</b>: 팀 멤버별 진도를 파악하고 빨리 진도를 따라잡을 수 있게 도우려고 합니다.<br>
                             </p>
                             <p class="buttonPos">
@@ -99,12 +102,12 @@
                             <h5 class="card-title">문성원</h5>
                             <p style="font-size:16px;color:grey;margin:0">팀 멤버</p>
                             <p class="card-text">
-                                <b>MBTI</b>:ISFP<br>
-                                <b>장점</b>:어떤 오류를 만나도 포기하지않는것 <br>
-                                <b>스타일</b>:화합하는 분위기에서 자신의 능력을 최대한 끌어올립니다.
+                                <b>MBTI</b>: ISFP<br>
+                                <b>장점</b>: 어떤 오류를 만나도 포기하지않는것<br>
+                                <b>스타일</b>: 화합하는 분위기에서 자신의 능력을 최대한 끌어올립니다.
                             </p>
                             <p class="buttonPos">
-                                <button type="button" class="btn btn-light blogButton" onclick="location.href='https://swwcoding123.tistory.com/'">블로그
+                                <button type="button" class="btn btn-light blogButton" onclick="location.href=''">블로그
                                     바로가기
                                 </button>
                             </p>
@@ -174,12 +177,12 @@
 <!--방명록-->
 <div class="center">
     <!--방명록 버튼-->
-    <div class="guestButton">
-        <button id="showButton" type="button" class="btn btn-primary btn-lg" onclick="guestButton()">방명록 보기/작성하기
-        </button>
+    <div id="guestButton">
+        <button id="showButton" type="button" class="btn btn-primary btn-lg" onclick="guestButton()">방명록 보기/작성하기</button>
     </div>
     <br>
     <div id="guestLog">
+        <h2>방명록을 적어주세요😊</h2>
         <form>
             <label>이름</label><br>
             <input type="text" id="nameField"><br><br>
@@ -188,9 +191,31 @@
             <textarea id="commentField"></textarea>
         </form>
         <button type="button" class="btn btn-secondary" onclick="save_log()">등록하기</button>
+        <br><br>
+
+        <!--방명록 댓글예시-->
+        <div id="mycard">
+            <div class="postcard">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>잘 봤어요!</p>
+                        <footer class="blockquote-footer">김철수</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="postcard">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>잘 봤습니다!</p>
+                        <footer class="blockquote-footer">김맹구</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
     </div>
+
+
 </div>
 
 
 </body>
-</html>
