@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 app = Flask(__name__)
 
 from pymongo import MongoClient
-client = MongoClient('mongodb+srv://test:sparta@cluster0.f3orwbt.mongodb.net/Cluster0?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://test:sparta@cluster0.bdw7xme.mongodb.net/Cluster0?retryWrites=true&w=majority')
 db = client.miniproject
 
 @app.route('/')
@@ -20,7 +20,7 @@ def web_nameField_post():
    }
    db.guests.insert_one(doc)
 
-   return jsonify({'msg': '입력완료!'})
+   return jsonify({'msg': '방명록이 등록되었습니다!'})
 
 @app.route("/guests", methods=["GET"])
 def web_nameField_get():
