@@ -9,23 +9,23 @@ db = client.dbsparta
 def home():
    return render_template('index.html')
 
-@app.route("/orders", methods=["POST"])
+@app.route("/guests", methods=["POST"])
 def web_nameField_post():
    name_receive = request.form['name_give']
    comment_receive = request.form['comment_give']
 
    doc = {
-         'name': name_recive,
+         'name': name_receive,
          'comment': comment_receive
    }
    db.orders.insert_one(doc)
 
    return jsonify({'msg': '입력완료!'})
 
-@app.route("/mars", methods=["GET"])
+@app.route("/guests", methods=["GET"])
 def web_nameField_get():
-   all_users = list(db.users.find({}, {'_id': False}))
-   return jsonify({'users':user_list})
+   guest_list = list(db.guests.find({}, {'_id': False}))
+   return jsonify({'guests':guest_list})
 
 if __name__ == '__main__':
    app.run('0.0.0.0', port=5000, debug=True)
