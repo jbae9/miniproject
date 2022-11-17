@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abel');
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Serif+KR:wght@300&display=swap");
-
-* {
-    font-family: 'Noto Sans', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 
 .center {
     display: flex;
@@ -115,4 +112,8 @@ input[type=text] {
     width: 500px;
     margin: 20px auto 20px auto;
     box-shadow: 0px 0px 5px gray;
+}
+
+#mycard {
+    font-family: 'Poor Story', cursive;
 }
