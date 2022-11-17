@@ -11,6 +11,12 @@
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
 
+    <script>
+        function darkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }</script>
+
     <link rel="stylesheet" href="../static/index.css">
     <script src="../static/index.js"></script>
 
@@ -27,6 +33,7 @@
     <h1>셀럽파이브</h1>
     <h6>내일배움캠프 4기 Node.js 5조 </h6>
     <h4>배움, 용기, 시도 </h4><br>
+    <button type="button" class="btn btn-secondary" onclick="darkMode()">다크 모드</button> <p></p>
     <button type="button" class="btn btn-outline-light" onclick="document.getElementById('guestButton').scrollIntoView()">방명록 바로가기</button>
 </div>
 

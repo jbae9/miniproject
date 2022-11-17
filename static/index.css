@@ -26,7 +26,7 @@
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
 
     color: white;
     font-family: 'Noto Sans';
@@ -44,6 +44,12 @@
     letter-spacing:6px;
     font-weight: 400;
     font-family: 'YES24';
+}
+
+/*다크 모드 버튼*/
+.dark-mode {
+  background-color: black;
+  color: black;
 }
 
 /*멤버 카드*/
@@ -115,4 +121,21 @@ input[type=text] {
     width: 500px;
     margin: 20px auto 20px auto;
     box-shadow: 0px 0px 5px gray;
+}
+
+/* 다크모드 시도*/
+
+@media (prefers-color-scheme: light) {
+  .dark-mode-title {
+    display:none;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #111;
+    color: #fff;
+  }
+  .light-mode-title {
+    display:none;
+  }
 }
