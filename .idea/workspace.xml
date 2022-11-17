@@ -28,15 +28,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/이호균/Desktop/p4&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Workspace/06 Herbst 2022/sparta/projects/homework",
+    "settings.editor.selected.configurable": "preferences.editor"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="miniproject" type="PythonConfigurationType" factoryName="Python">
       <module name="miniproject" />
@@ -92,6 +92,7 @@
       <workItem from="1668589451092" duration="627000" />
       <workItem from="1668595017429" duration="1215000" />
       <workItem from="1668599652661" duration="633000" />
+      <workItem from="1668643934280" duration="5216000" />
     </task>
     <servers />
   </component>
